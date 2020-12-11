@@ -1,5 +1,5 @@
 {
-  "name": "SolidityLayout",
+  "name": "solidity-layout",
   "version": "1.0.0",
   "description": "- nodejs    (v12.16.0)\r - npm       (6.13.4)\r - docker    (19.03.8)",
   "main": "truffle-config.js",
@@ -7,7 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "prettier": "prettier --write ./contracts/**/*.sol"  
+    "prettier": "prettier --write ./contracts/**/*.sol",
+    "solhint": "solhint contracts/**/*.sol"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "homepage": "https://github.com/DelgadoTrueba/SolidityLayout#readme",
   "devDependencies": {
     "prettier": "^2.2.1",
-    "prettier-plugin-solidity": "^1.0.0-beta.2"
+    "prettier-plugin-solidity": "^1.0.0-beta.2",
+    "solhint": "^3.3.2"
   }
 }
