@@ -1,6 +1,5 @@
 const StorageFactory = artifacts.require('Storage');
 const MachineFactory = artifacts.require('Machine');
-
 const BN = web3.utils.BN;
 
 contract('Machine', accounts => {
@@ -19,7 +18,6 @@ contract('Machine', accounts => {
             await Machine.saveValue(new BN('54'));
             let aux = await Storage.val();
             console.log(aux);
-            //(await Storage.val()).should.be.bignumber.equal(new BN('54'));
         });
 
     });
